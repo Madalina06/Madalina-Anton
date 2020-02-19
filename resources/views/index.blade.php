@@ -47,6 +47,11 @@
       <div class="col-md-4">
         <h2>{{$article->title}}</h2>
         <p>{{$article->description}} </p>
+        <p>{{$article->text}}</p>
+        <p>{{$article->alias}}</p>
+        <p>{{$article->img}}</p>
+        <p>{{$article->meta_key}}</p>
+        <p>{{$article->meta_desc}}</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
 @endforeach
