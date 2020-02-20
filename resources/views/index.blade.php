@@ -35,7 +35,7 @@
     <div class="container">
       <h1  class="display-3">{{$HL}}</h1>
       <p>{{$hl}}</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <p><a class="btn btn-primary btn-lg" href="https://www.samsung.com/ru/explore/photography/" role="button">Foto Samsung &raquo;</a></p>
     </div>
   </div>
 
@@ -52,7 +52,8 @@
         <p>{{$article->img}}</p>
         <p>{{$article->meta_key}}</p>
         <p>{{$article->meta_desc}}</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      
+        <p><a class="btn btn-secondary" href="https://www.samsung.com/global/galaxy/" role="button">Samsung details &raquo;</a></p>
       </div>
 @endforeach
 
