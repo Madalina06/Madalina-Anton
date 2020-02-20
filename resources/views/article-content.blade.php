@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,20 +42,12 @@
     <!-- Example row of columns -->
     <div class="row">
 
-@foreach($article as $article)
-      <div class="col-md-4">
-        <h2>{{$article->id}}</h2>
-        <p>{{$article->title}} </p>
-        <p>{{$article->description}} </p>
-        <p>{{$article->text}}</p>
-        <p>{{$article->alias}}</p>
-        <p>{{$article->img}}</p>
-        <p>{{$article->meta_key}}</p>
-        <p>{{$article->meta_desc}}</p>
-      
-        <p><a class="btn btn-secondary" href="https://www.samsung.com/global/galaxy/" role="button">Samsung details &raquo;</a></p>
+@if($article)
+      <div>
+      <h2>{{ $article->title }}</h2>
+      <p>{!! $article->text!!}</p>
       </div>
-@endforeach
+@endif
 
     </div>
     <hr>
