@@ -27,7 +27,9 @@
          </div>
        </div>
     </nav>
+@extends('layouts.site')
 
+@section('content')
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -35,7 +37,7 @@
     <div class="container">
       <h1  class="display-3">{{$HL}}</h1>
       <p>{{$hl}}</p>
-      <p><a class="btn btn-primary btn-lg" href="{{route('articleShow',['id'=>$article->id]) }}" ></a></p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo; </a></p>
     </div>
   </div>
 
@@ -45,16 +47,9 @@
 
 @foreach($article as $article)
       <div class="col-md-4">
-        <h2>{{$article->id}}</h2>
-        <p>{{$article->title}} </p>
+        <h2>{{$article->title}} </h2>
         <p>{{$article->description}} </p>
-        <p>{{$article->text}}</p>
-        <p>{{$article->alias}}</p>
-        <p>{{$article->img}}</p>
-        <p>{{$article->meta_key}}</p>
-        <p>{{$article->meta_desc}}</p>
-      
-        <p><a class="btn btn-secondary" href="https://www.samsung.com/global/galaxy/" role="button">Samsung details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="{{route('articleShow',['id'=>$article->id])}}" role="button">View details &raquo;</a></p>
       </div>
 @endforeach
 
@@ -62,8 +57,10 @@
     <hr>
   </div> <!-- /container -->
 </main>
+@endsection
 <footer class="container">
   <p>&copy; 2020 Company, Inc.</p>
 </footer>
 </body>
 </html>
+
