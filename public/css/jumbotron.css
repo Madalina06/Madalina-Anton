@@ -2,6 +2,9 @@
 /*body {
   padding-top: 3.5rem;
 }*/
+body {
+  padding-top: 3.5rem;
+}
 .links > a {
   color: DodgerBlue;
   padding: 0 15px;
@@ -11,3 +14,4 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.form{width: 100%;}
