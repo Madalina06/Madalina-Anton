@@ -31,11 +31,11 @@ class IndexController extends Controller
     }
 
     public function store(Request $request){
-        $this->valide($request, ['title'=>'required | max:50',
+        $this->validate($request, ['title'=>'required | max:50',
                                  'description'=> 'required | max:200',
                                  'text'=> 'required']);
-      $data=$request->all();
-      $article= new Article;
+      $data = $request->all();
+      $article = new Article;
       $article ->fill($data);
       $article ->save();
       return redirect('/');
